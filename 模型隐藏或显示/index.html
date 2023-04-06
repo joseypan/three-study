@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .option-btn {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        height: 60px;
+        z-index: 999;
+      }
+      .btn {
+        display: inline-block;
+        width: 80px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="option-btn">
+      <div class="visible-btn btn">显示</div>
+      <div class="invisible-btn btn">隐藏</div>
+      <div class="invisible-materail btn">隐藏材质</div>
+    </div>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "../build/three.module.js",
+          "three/addons/": "../jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
